@@ -1,0 +1,12 @@
+@{
+    // Since Address isn't a string, it requires a cast.
+    var movie = ViewData["MyMovie"] as Movie;
+}
+
+Hi @ViewData["Greeting"], hello World!
+
+<h1>
+    @movie.Id<br>
+    @movie.Title<br>
+    @movie.Genre<br>
+</h1>
